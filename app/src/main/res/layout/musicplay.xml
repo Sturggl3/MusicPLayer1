@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="horizontal"
+                 android:background="#d8e4f3">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout"
+    android:background="#295b75"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginBottom="50dp">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageView"
+        android:layout_weight="1"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/musicprevious"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:src="@drawable/musicprevious"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/Musicplay"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:src="@drawable/musicpause"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/musicnext"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:src="@drawable/musicnext"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/musicmenu"
+        android:layout_weight="1"
+        android:layout_margin="10dp"/>
+</LinearLayout>
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MusicProgress"
+        android:max="100"
+        android:indeterminate="false"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>
